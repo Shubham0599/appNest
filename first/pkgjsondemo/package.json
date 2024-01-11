@@ -1,0 +1,14 @@
+{
+  "name": "json_demo",
+  "version": "0.0.1",
+  "description": "json demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shubham anand",
+  "license": "ISC",
+  "dependencies": {
+    "cat-me": "^1.0.3"
+  }
+}

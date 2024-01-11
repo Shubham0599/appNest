@@ -1,0 +1,16 @@
+###List all messages
+GET http://localhost:3000/message/
+
+### List particular message
+GET http://localhost:3000/message/131111
+
+###create a new message
+POST http://localhost:3000/message
+Content-Type: application/json
+
+{
+    "content":"Creating the second thing"
+}
+
+
+
