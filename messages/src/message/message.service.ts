@@ -1,12 +1,12 @@
 import { MessageRepository } from "./message.repository";
+import { Injectable } from "@nestjs/common";
 
-//below class need the copy of the repository 
-export class MessageService {
-    //a property stoare the instance of messagerepo
+@Injectable()
+export class MessageService {  
     messageRepo: MessageRepository
-    constructor() {
-        //serviceis creating its own repository ,dont do this in real app
-        this.messageRepo = new MessageRepository();
+    constructor(messageRepo:MessageRepository) {
+        //used beter approach to use inversion of controll
+        this.messageRepo = messageRepo
     }
     findAll() {
         return this.messageRepo.findAll();
