@@ -12,7 +12,7 @@ export class MessageRepository{
     async findAll(){
         var content= await readFile('message.json','utf8')
         var meassge= JSON.parse(content);
-        return meassge
+        return meassge;
     }
     async create(newmessage:string){
         var content= await readFile('message.json','utf8')
